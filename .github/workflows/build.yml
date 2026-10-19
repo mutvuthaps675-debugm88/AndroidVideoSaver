@@ -24,7 +24,7 @@ jobs:
         with:
           gradle-version: '8.9'
       - name: Unpack Android source
-        run: unzip -q AndroidVideoSaver-project.zip -d android-source
+        run: unzip -q AndroidVideoSaver-project-v2.zip -d android-source
       - name: Compile Android APK
         working-directory: android-source
         run: gradle --no-daemon assembleDebug
